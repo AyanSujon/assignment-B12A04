@@ -12,15 +12,15 @@ function  isSame(arr1 , arr2 ) {
             if(typeof arr1[i] !== "number" || typeof arr2[i] !== "number"){
             return false;
             }
-            if( arr1[i] === arr2[i]){
-                return true;
-            }
-            else{
-                return false;
+            if( arr1[i] !== arr2[i]){
+              return false;
             }
           } 
+          return true;
+
 }
-let output = isSame([1, 2, 3] , [1 , 2 , 3]
+let output = isSame(
+{data: [2 , 5 , 6] } , [2 , 5 , 6]
 );
 console.log(output);
 
