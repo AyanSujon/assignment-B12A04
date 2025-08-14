@@ -2,14 +2,14 @@
 
 function  isSame(arr1 , arr2 ) {
           // You have to write your code here
-        if(!Array.isArray(arr1) || !Array.isArray(arr1)){
+        if(!Array.isArray(arr1) || !Array.isArray(arr2)){
             return "Invalid";
         }
         if (arr1.length !== arr2.length) {
             return false;
         }
-          for(i = 0; i < arr1.length; i++){
-            if(arr1[i] !== "nunber" || arr2[i] !== "nunber"){
+          for(let i = 0; i < arr1.length; i++){
+            if(typeof arr1[i] !== "nunber" || typeof arr2[i] !== "nunber"){
             return false;
             }
             if( arr1[i] === arr2[i]){
@@ -20,7 +20,7 @@ function  isSame(arr1 , arr2 ) {
             }
           } 
 }
-let output = isSame([1, 2, 3] , [1 , 2 , 3]
+let output = isSame([1 , 4 , 5], [1 , 4 , 5]
 );
 console.log(output);
 
