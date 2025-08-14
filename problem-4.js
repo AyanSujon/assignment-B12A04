@@ -9,7 +9,7 @@ function  isSame(arr1 , arr2 ) {
             return false;
         }
           for(let i = 0; i < arr1.length; i++){
-            if(typeof arr1[i] !== "nunber" || typeof arr2[i] !== "nunber"){
+            if(typeof arr1[i] !== "number" || typeof arr2[i] !== "number"){
             return false;
             }
             if( arr1[i] === arr2[i]){
@@ -20,7 +20,7 @@ function  isSame(arr1 , arr2 ) {
             }
           } 
 }
-let output = isSame([1 , 4 , 5], [1 , 4 , 5]
+let output = isSame([1, 2, 3] , [1 , 2 , 3]
 );
 console.log(output);
 
