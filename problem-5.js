@@ -23,7 +23,7 @@ for(let i = 0; i < marks.length; i++){
 }
 let average= totalSum / marks.length;
 
-//Checking empty array and fixed (NaN)
+//Checking empty array and fix (NaN)
 if(marks.length === 0){
      average = 0; 
 }
